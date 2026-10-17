@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Restful Booker create booking response",
+  "type": "object",
+  "required": ["bookingid", "booking"],
+  "properties": {
+    "bookingid": { "type": "integer" },
+    "booking": {
+      "type": "object",
+      "required": ["firstname", "lastname", "totalprice", "depositpaid", "bookingdates"],
+      "properties": {
+        "firstname": { "type": "string" },
+        "lastname": { "type": "string" },
+        "totalprice": { "type": "integer" },
+        "depositpaid": { "type": "boolean" },
+        "bookingdates": {
+          "type": "object",
+          "required": ["checkin", "checkout"],
+          "properties": {
+            "checkin": { "type": "string", "format": "date" },
+            "checkout": { "type": "string", "format": "date" }
+          },
+          "additionalProperties": true
+        },
+        "additionalneeds": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

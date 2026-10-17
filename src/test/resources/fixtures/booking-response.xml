@@ -1,0 +1,11 @@
+<booking>
+    <firstname>Ada</firstname>
+    <lastname>Lovelace</lastname>
+    <totalprice>450</totalprice>
+    <depositpaid>true</depositpaid>
+    <bookingdates>
+        <checkin>2026-11-01</checkin>
+        <checkout>2026-11-05</checkout>
+    </bookingdates>
+    <additionalneeds>Breakfast</additionalneeds>
+</booking>

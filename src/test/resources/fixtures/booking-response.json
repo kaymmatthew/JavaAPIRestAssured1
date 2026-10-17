@@ -1,0 +1,13 @@
+{
+  "firstname": "Ada",
+  "lastname": "Lovelace",
+  "totalprice": 450,
+  "depositpaid": true,
+  "bookingdates": {
+    "checkin": "2026-11-01",
+    "checkout": "2026-11-05",
+    "futureDateMetadata": "ignored by response model"
+  },
+  "additionalneeds": "Breakfast",
+  "futureResponseProperty": "ignored by response model"
+}
